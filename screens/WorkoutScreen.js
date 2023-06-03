@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, Text, View, ScrollView, Image, Pressable} from "react-native" 
+import { Text, View, ScrollView, Image, Pressable} from "react-native" 
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { Ionicons} from '@expo/vector-icons'
 
@@ -33,6 +33,9 @@ const WorkoutScreen = () => {
     </ScrollView>
     
     <Pressable 
+      onPress={() => navigation.navigate("Fit", {
+        excersises:route.params.excersises 
+      })}
       style={{
         backgroundColor:"blue",
         width:120,
