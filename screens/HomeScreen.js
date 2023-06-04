@@ -29,7 +29,8 @@ const HomeScreens = () => {
             flexDirection:"row", 
             alignItems: "center", 
             justifyContent:"space-between", 
-            marginTop: 20
+            marginTop: 20,
+            padding: 20
             }}>
           <View>
             <Text style={{textAlign:"center",fontWeight: "bold", color: "white", fontSize: 18}}>

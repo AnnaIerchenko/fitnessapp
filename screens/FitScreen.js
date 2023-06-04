@@ -55,13 +55,12 @@ const FitScreen = () => {
           padding:10
         }}
       >
-        <Text style={{textAlign:"center",fontWeight:"bold",fontSize:20}}>
+        <Text style={{textAlign:"center",fontWeight:"bold",fontSize:20, color:"white"}}>
           DONE
         </Text>
       </Pressable>
       ) : ( 
       <Pressable
-      disabled={index === 0}
       onPress={() => {
         navigation.navigate("Rest")
         setCompleted(...completed, current.name)
@@ -82,7 +81,7 @@ const FitScreen = () => {
           padding:10
         }}
       >
-        <Text style={{textAlign:"center",fontWeight:"bold",fontSize:20}}>
+        <Text style={{textAlign:"center",fontWeight:"bold",fontSize:20, color: "white"}}>
           DONE
         </Text>
       </Pressable>
